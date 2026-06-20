@@ -1,0 +1,39 @@
+{
+  "name": "server",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/multer": "^2.0.0"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  
+  "scripts": {
+    "dev": "ts-node-dev index.ts",
+    "start": "node index.ts"
+  },
+
+  "dependencies": {
+    "@types/cookie-parser": "^1.4.9",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.3",
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/morgan": "^1.9.10",
+    "argon2": "^0.43.1",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0",
+    "fs": "^0.0.1-security",
+    "helmet": "^8.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.17.0",
+    "morgan": "^1.10.1",
+    "multer": "^2.0.2",
+    "path": "^0.12.7",
+    "sharp": "^0.34.3"
+  }
+}
