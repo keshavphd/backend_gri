@@ -5,7 +5,10 @@
   "private": true,
   "devDependencies": {
     "@types/bun": "latest",
-    "@types/multer": "^2.0.0"
+    "@types/multer": "^2.0.0",
+    "typescript": "^5.0.0",
+    "@types/node": "^20.0.0",
+    "ts-node-dev": "^2.0.0"
   },
   "peerDependencies": {
     "typescript": "^5"
@@ -13,7 +16,8 @@
   
   "scripts": {
     "dev": "ts-node-dev index.ts",
-    "start": "node index.ts"
+    "build": "tsc",
+    "start": "node dist/index.js"
   },
 
   "dependencies": {
@@ -34,6 +38,7 @@
     "morgan": "^1.10.1",
     "multer": "^2.0.2",
     "path": "^0.12.7",
-    "sharp": "^0.34.3"
+    "sharp": "^0.34.3",
+    "serverless-http": "^3.2.0"
   }
 }

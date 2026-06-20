@@ -66,9 +66,9 @@ import cors from "cors";  // Ensure installed: npm i cors @types/cors
 import type { CorsOptions } from "cors";
 import helmet from "helmet";
 import morgan from "morgan";
-import connectDB from "./utils/database";
-import userRouter from "./routers/userRouter";
-import productRouter from "./routers/productRouter";
+import connectDB from "./utils/database.js";
+import userRouter from "./routers/userRouter.js";
+import productRouter from "./routers/productRouter.js";
 import cookieParser from 'cookie-parser';
 import path from "path";
 

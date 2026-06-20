@@ -1,11 +1,11 @@
 import { Types } from "mongoose";
-import type { ProductType } from "../models/productModel";
-import Product from "../models/productModel";
-import User from "../models/userModel";
+import type { ProductType } from "../models/productModel.js";
+import Product from "../models/productModel.js";
+import User from "../models/userModel.js";
 import type { Request, Response } from "express";
-import type { AddressType } from "../models/addressModel";
-import type { ImageGroup } from "../models/imageModel";
-import type { CoordsType } from "../models/coordinatesSchema";
+import type { AddressType } from "../models/addressModel.js";
+import type { ImageGroup } from "../models/imageModel.js";
+import type { CoordsType } from "../models/coordinatesSchema.js";
 
 interface ProductResponseBody {
   createdProduct?: ProductType | null;

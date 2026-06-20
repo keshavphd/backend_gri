@@ -1,11 +1,11 @@
 import { model, Schema, Types, type Document } from "mongoose";
 
-import type { AddressType } from "./addressModel";
-import addressSchema from "./addressModel";
+import type { AddressType } from "./addressModel.js";
+import addressSchema from "./addressModel.js";
 
-import { ImageGrpSchema, type ImageGroup } from "./imageModel";
-import coordinatesSchema from "./coordinatesSchema";
-import type { CoordsType } from "./coordinatesSchema";
+import { ImageGrpSchema, type ImageGroup } from "./imageModel.js";
+import coordinatesSchema from "./coordinatesSchema.js";
+import type { CoordsType } from "./coordinatesSchema.js";
 
 export interface ProductType extends Document {
   propertyname: string;

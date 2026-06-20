@@ -1,6 +1,6 @@
-import Userbook from "../models/userModel";
+import Userbook from "../models/userModel.js";
 import type { Request, Response } from "express";
-import type { UserTypes } from "../models/userModel";
+import type { UserTypes } from "../models/userModel.js";
 import type { CookieOptions } from "express";
 import jwt from "jsonwebtoken";
 

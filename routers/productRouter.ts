@@ -1,8 +1,8 @@
 import { Router } from "express";
-import auth from "../utils/auth";
-import productController from "../controllers/productController";
-import upload, { processUpload } from "../utils/multer";
-import { updateProcessUpload } from "../utils/updateProcessUpload";
+import auth from "../utils/auth.js";
+import productController from "../controllers/productController.js";
+import upload, { processUpload } from "../utils/multer.js";
+import { updateProcessUpload } from "../utils/updateProcessUpload.js";
 
 const router = Router();
 router.route('/add-product').post(auth,upload.array('photos',30),processUpload('images'),productController.productRegister);
